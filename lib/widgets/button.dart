@@ -46,7 +46,6 @@ class Button extends StatelessWidget {
                   ))
                 ),
                   onPressed: () {
-                    print("Pressed");
                   },
                   child: const Text(
                     "Press Me!",
