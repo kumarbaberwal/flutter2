@@ -1,4 +1,4 @@
-import 'package:first/widgets/button.dart';
+import 'package:first/widgets/list_grid.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
         primaryColor: Colors.deepPurple,
       ),
-      home: const Button(),
+      home: const ListGrid(),
     );
   }
 }
