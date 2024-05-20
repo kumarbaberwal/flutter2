@@ -21,11 +21,10 @@ class Button extends StatelessWidget {
           children: [
             TextButton(
                 style: ButtonStyle(
-                    elevation: MaterialStateProperty.all(20),
-                    padding:
-                        MaterialStateProperty.all(const EdgeInsets.all(20)),
-                    overlayColor: MaterialStateProperty.all(Colors.cyan),
-                    backgroundColor: MaterialStateProperty.all(Colors.amber)),
+                    elevation: WidgetStateProperty.all(20),
+                    padding: WidgetStateProperty.all(const EdgeInsets.all(20)),
+                    overlayColor: WidgetStateProperty.all(Colors.cyan),
+                    backgroundColor: WidgetStateProperty.all(Colors.amber)),
                 onPressed: () {},
                 child: const Text(
                   "Press Me!",
@@ -38,15 +37,14 @@ class Button extends StatelessWidget {
               height: 50,
               width: 200,
               child: ElevatedButton(
-                style: ButtonStyle(
-                  backgroundColor: const MaterialStatePropertyAll(Colors.black),
-                  overlayColor: const MaterialStatePropertyAll(Colors.white),
-                  shape: MaterialStatePropertyAll(RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(50),
-                  ))
-                ),
-                  onPressed: () {
-                  },
+                  style: ButtonStyle(
+                      backgroundColor:
+                          const WidgetStatePropertyAll(Colors.black),
+                      overlayColor: const WidgetStatePropertyAll(Colors.white),
+                      shape: WidgetStatePropertyAll(RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50),
+                      ))),
+                  onPressed: () {},
                   child: const Text(
                     "Press Me!",
                     style: TextStyle(fontSize: 30, color: Colors.white),

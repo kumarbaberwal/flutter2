@@ -7,8 +7,12 @@ class ContainerSized extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.lightBlue,
-          title: const Text("Container and Sized Box"),
+          backgroundColor: Colors.pink[300],
+          centerTitle: true,
+          title: const Text(
+            "Container and Sized Box",
+            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+          ),
         ),
         body: Center(
           child: Container(
