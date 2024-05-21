@@ -22,7 +22,8 @@ class SnackbarWidget extends StatelessWidget {
           ),
           onPressed: () {
             final snackBar = SnackBar(
-              action: SnackBarAction(label: 'Exit',  textColor: Colors.black, onPressed: (){}),
+              action: SnackBarAction(
+                  label: 'Exit', textColor: Colors.black, onPressed: () {}),
               margin: const EdgeInsets.all(25),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
@@ -31,7 +32,11 @@ class SnackbarWidget extends StatelessWidget {
               // padding: const EdgeInsets.all(10),
               duration: const Duration(milliseconds: 1000),
               backgroundColor: Colors.amber,
-              content: const Text('You Pressed The Button !', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),),
+              content: const Text(
+                'You Pressed The Button !',
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+              ),
             );
             ScaffoldMessenger.of(context).showSnackBar(snackBar);
           },
