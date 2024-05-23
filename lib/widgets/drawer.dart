@@ -29,12 +29,18 @@ class DrawerWidgetState extends State<DrawerWidget> {
                           backgroundImage: NetworkImage(
                               'https://avatars.githubusercontent.com/u/148860110?v=4'),
                         ),
-                        SizedBox(width: 10,),
+                        SizedBox(
+                          width: 10,
+                        ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('Kumar', style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
+                            Text(
+                              'Kumar',
+                              style: TextStyle(
+                                  fontSize: 25, fontWeight: FontWeight.bold),
+                            ),
                             Text('kumar@gmail.com'),
                           ],
                         )
