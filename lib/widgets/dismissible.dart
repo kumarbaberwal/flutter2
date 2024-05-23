@@ -12,8 +12,8 @@ class DismissibleWidgetState extends State<DismissibleWidget> {
     'Kumar',
     'Sameer',
     'Bhavya',
-    'Yashika',
     'Kashish',
+    'Yashika',
     'Dashmeet',
     'Priyanshu'
   ];
