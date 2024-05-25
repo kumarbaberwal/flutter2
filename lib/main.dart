@@ -1,4 +1,4 @@
-import 'package:first/widgets/alert.dart';
+import 'package:first/widgets/bottomsheet.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -12,9 +12,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,
-        primaryColor: Colors.deepPurple,
+        primaryColor: Colors.yellow,
       ),
-      home: const AlertWidget(),
+      home: const BottomSheetWidget(),
     );
   }
 }
