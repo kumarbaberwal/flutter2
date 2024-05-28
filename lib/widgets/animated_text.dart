@@ -30,23 +30,23 @@ class AnimatedTextWidget extends StatelessWidget {
             //     )
             //   ],
             // ),
-            // AnimatedTextKit(
-            //   animatedTexts: [
-            //     TypewriterAnimatedText('Kumar',
-            //         textStyle: const TextStyle(
-            //             fontWeight: FontWeight.bold, fontSize: 30),
-            //         speed: const Duration(milliseconds: 400))
-            //   ],
-            //   // totalRepeatCount: 5,
-            //   pause: const Duration(milliseconds: 200),
-            //   displayFullTextOnTap: true,
-            //   stopPauseOnTap: true,
-            // ),
-            // const SizedBox(
-            //   height: 40,
-            // ),
+            AnimatedTextKit(
+              animatedTexts: [
+                TypewriterAnimatedText('Kumar',
+                    textStyle: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 30),
+                    speed: const Duration(milliseconds: 400))
+              ],
+              // totalRepeatCount: 5,
+              pause: const Duration(milliseconds: 200),
+              displayFullTextOnTap: true,
+              stopPauseOnTap: true,
+            ),
+            const SizedBox(
+              height: 40,
+            ),
             AnimatedTextKit(animatedTexts: [
-              WavyAnimatedText('CLASS REPRESENTATIVE',
+              WavyAnimatedText('CLASS  REPRESENTATIVE',
                   textStyle: const TextStyle(
                       fontWeight: FontWeight.bold, fontSize: 25))
             ])
