@@ -1,4 +1,4 @@
-import 'package:first/widgets/bottomsheet.dart';
+import 'package:first/widgets/animated_text.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
         primaryColor: Colors.yellow,
       ),
-      home: const BottomSheetWidget(),
+      home: const AnimatedTextWidget(),
     );
   }
 }
