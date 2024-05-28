@@ -10,12 +10,18 @@ class DismissibleWidget extends StatefulWidget {
 class DismissibleWidgetState extends State<DismissibleWidget> {
   List<String> names = [
     'Kumar',
-    'Sameer',
-    'Bhavya',
-    'Kashish',
-    'Yashika',
-    'Dashmeet',
-    'Priyanshu'
+    'Kumar',
+    'Kumar',
+    'Kumar',
+    'Kumar',
+    'Kumar',
+    'Kumar',
+    // 'Sameer',
+    // 'Bhavya',
+    // 'Kashish',
+    // 'Yashika',
+    // 'Dashmeet',
+    // 'Priyanshu'
   ];
 
   @override
@@ -60,12 +66,14 @@ class DismissibleWidgetState extends State<DismissibleWidget> {
               key: Key(name),
               background: Container(
                 margin: const EdgeInsets.all(10),
-                decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(10), color: Colors.red),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10), color: Colors.red),
               ),
               secondaryBackground: Container(
                 margin: const EdgeInsets.all(10),
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: Colors.green),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.green),
               ),
               child: Card(
                 margin: const EdgeInsets.all(10),

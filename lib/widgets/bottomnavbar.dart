@@ -33,14 +33,14 @@ class _BottomNavbarWidgetState extends State<BottomNavbarWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.green,
-        centerTitle: true,
-        title: const Text(
-          'Bottom NavBar',
-          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
-        ),
-      ),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.green,
+      //   centerTitle: true,
+      //   title: const Text(
+      //     'Bottom NavBar',
+      //     style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+      //   ),
+      // ),
       body: PageView(
         controller: pageController,
         children: const [
