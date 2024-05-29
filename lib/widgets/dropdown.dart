@@ -8,7 +8,7 @@ class DropdownWidget extends StatefulWidget {
 }
 
 class _DropdownWidgetState extends State<DropdownWidget> {
-  String selectedValue = 'orange';
+  String selectedValue = 'ORANGE';
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class _DropdownWidgetState extends State<DropdownWidget> {
                 dropdownColor: Colors.grey.shade100,
                 value: selectedValue,
                 icon: const Icon(Icons.arrow_drop_down_circle),
-                items: <String>['orange', 'apple', 'banana', 'cake', 'icecream'].map<DropdownMenuItem<String>>((String value) {
+                items: <String>['ORANGE', 'APPLE', 'BANANA', 'CAKE', 'ICECREAM'].map<DropdownMenuItem<String>>((String value) {
                   return DropdownMenuItem<String>(value: value, child: Text(value));
                 }).toList(),
                 onChanged: (String? newValue) {
