@@ -19,15 +19,34 @@ class _FormWidgetState extends State<FormWidget> {
       _formKey.currentState!.save();
       submitform();
     } else {
-      print('Error');
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+            margin: const EdgeInsets.all(15),
+            behavior: SnackBarBehavior.floating,
+            backgroundColor: Colors.green,
+            padding: const EdgeInsets.all(15),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            content: const Text('Error: Form is not valid!')),
+      );
     }
   }
 
   submitform() {
-    print(firstname);
-    print(lastname);
-    print(email);
-    print(password);
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        margin: const EdgeInsets.all(15),
+        behavior: SnackBarBehavior.floating,
+        backgroundColor: Colors.green,
+        padding: const EdgeInsets.all(15),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        content: Text(
+          'First Name: $firstname\nLast Name: $lastname\nEmail: $email\nPassword: $password',
+          style:
+              const TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+        ),
+      ),
+    );
   }
 
   final _formKey = GlobalKey<FormState>();
@@ -63,6 +82,9 @@ class _FormWidgetState extends State<FormWidget> {
                   firstname = newValue.toString();
                 },
               ),
+              const SizedBox(
+                height: 20,
+              ),
               TextFormField(
                 decoration: const InputDecoration(hintText: 'Enter Last Name'),
                 key: const ValueKey('lastname'),
@@ -77,6 +99,9 @@ class _FormWidgetState extends State<FormWidget> {
                   lastname = newValue.toString();
                 },
               ),
+              const SizedBox(
+                height: 20,
+              ),
               TextFormField(
                 decoration: const InputDecoration(hintText: 'Enter Email'),
                 key: const ValueKey('email'),
@@ -90,6 +115,9 @@ class _FormWidgetState extends State<FormWidget> {
                 onSaved: (newValue) {
                   email = newValue.toString();
                 },
+              ),
+              const SizedBox(
+                height: 20,
               ),
               TextFormField(
                 obscureText: true,
@@ -106,13 +134,24 @@ class _FormWidgetState extends State<FormWidget> {
                   password = newValue.toString();
                 },
               ),
+              const SizedBox(
+                height: 30,
+              ),
               TextButton(
+                  style: const ButtonStyle(
+                    padding: WidgetStatePropertyAll(EdgeInsets.only(
+                        right: 30, left: 30, top: 15, bottom: 15)),
+                    backgroundColor: WidgetStatePropertyAll(Colors.green),
+                  ),
                   onPressed: () {
                     trysubmit();
                   },
                   child: const Text(
                     'Save',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                        color: Colors.black),
                   ))
             ],
           ),
