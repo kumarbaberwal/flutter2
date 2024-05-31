@@ -1,4 +1,4 @@
-import 'package:first/widgets/tabbar.dart';
+import 'package:first/widgets/imagepicker.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
         primaryColor: Colors.yellow,
       ),
-      home: const TabBarWidget(),
+      home: const ImagePickerWidget(),
     );
   }
 }
